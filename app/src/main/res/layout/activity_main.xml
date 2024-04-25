@@ -13,7 +13,7 @@
         android:layout_height="100dp"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="2dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
         android:layout_height="100dp"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="2dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -197,7 +197,7 @@
         android:layout_height="100dp"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="2dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -258,7 +258,7 @@
         android:layout_height="100dp"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="2dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -307,7 +307,7 @@
         android:layout_height="50dp"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="2dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -319,7 +319,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="0"
             android:textAlignment="viewEnd"
             android:textSize="40sp" />
     </LinearLayout>
@@ -335,10 +334,30 @@
         android:text="Basic Calculator"
         android:textColor="#673AB7"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.191" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvDisplay1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textSize="40sp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
